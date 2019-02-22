@@ -1,0 +1,93 @@
+vsetvli	     31=0 imm11 rs1 14..12=0x7 rd 6..2=0x15 1..0=3
+
+vlw.v	     31..29=0 28..26=4 vm 24..20=0 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlseg2w.v    31..29=1 28..26=4 vm 24..20=0 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlseg3w.v    31..29=2 28..26=4 vm 24..20=0 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlseg4w.v    31..29=3 28..26=4 vm 24..20=0 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlseg5w.v    31..29=4 28..26=4 vm 24..20=0 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlseg6w.v    31..29=5 28..26=4 vm 24..20=0 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlseg7w.v    31..29=6 28..26=4 vm 24..20=0 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlseg8w.v    31..29=7 28..26=4 vm 24..20=0 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+
+vsw.v	     31..29=0 28..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vsseg2w.v    31..29=1 28..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vsseg3w.v    31..29=2 28..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vsseg4w.v    31..29=3 28..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vsseg5w.v    31..29=4 28..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vsseg6w.v    31..29=5 28..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vsseg7w.v    31..29=6 28..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vsseg8w.v    31..29=7 28..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+
+vlsw.v	     31..29=0 28..26=6 vm rs2 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlsseg2w.v   31..29=1 28..26=6 vm rs2 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlsseg3w.v   31..29=2 28..26=6 vm rs2 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlsseg4w.v   31..29=3 28..26=6 vm rs2 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlsseg5w.v   31..29=4 28..26=6 vm rs2 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlsseg6w.v   31..29=5 28..26=6 vm rs2 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlsseg7w.v   31..29=6 28..26=6 vm rs2 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+vlsseg8w.v   31..29=7 28..26=6 vm rs2 rs1 14..12=0x6 vd  6..2=0x1 1..0=3
+
+vssw.v	     31..29=0 28..26=2 vm rs2 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vssseg2w.v   31..29=1 28..26=2 vm rs2 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vssseg3w.v   31..29=2 28..26=2 vm rs2 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vssseg4w.v   31..29=3 28..26=2 vm rs2 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vssseg5w.v   31..29=4 28..26=2 vm rs2 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vssseg6w.v   31..29=5 28..26=2 vm rs2 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vssseg7w.v   31..29=6 28..26=2 vm rs2 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+vssseg8w.v   31..29=7 28..26=2 vm rs2 rs1 14..12=0x6 vs3 6..2=0x9 1..0=3
+
+vfadd.vf     31..26=0x00 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfredsum.vf  31..26=0x01 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfsub.vf     31..26=0x02 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfredosum.vf 31..26=0x03 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfmin.vf     31..26=0x04 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfredmin.vf  31..26=0x05 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfmax.vf     31..26=0x06 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfredmax.vf  31..26=0x07 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfsgnj.vf    31..26=0x08 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfsgnn.vf    31..26=0x09 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfsgnx.vf    31..26=0x0a vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+
+vfadd.vv     31..26=0x00 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfredsum.vv  31..26=0x01 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfsub.vv     31..26=0x02 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfredosum.vv 31..26=0x03 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfmin.vv     31..26=0x04 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfredmin.vv  31..26=0x05 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfmax.vv     31..26=0x06 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfredmax.vv  31..26=0x07 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfsgnj.vv    31..26=0x08 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfsgnn.vv    31..26=0x09 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfsgnx.vv    31..26=0x0a vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+
+vfmv.f.s     31..26=0x0c vm vs2      19..15=0 14..12=0x5 rd 6..2=0x15 1..0=3
+vfmv.s.f     31..26=0x0d vm 24..20=0 rs1      14..12=0x5 vd 6..2=0x15 1..0=3
+
+vmerge.vv    31..26=0x17 vm vs2 vs1 14..12=0x0 vd 6..2=0x15 1..0=3
+
+vfdiv.vv     31..26=0x20 vm vs2 rs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfunary0.vv  31..26=0x22 vm vs2 rs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfunary1.vv  31..26=0x23 vm vs2 rs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfmul.vv     31..26=0x24 vm vs2 rs1 14..12=0x1 vd 6..2=0x15 1..0=3
+
+vfdiv.vf     31..26=0x20 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfrdiv.vf    31..26=0x21 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfmul.vf     31..26=0x24 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+
+vfmadd.vv    31..26=0x28 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfnmadd.vv   31..26=0x29 vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfmsub.vv    31..26=0x2a vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfnmsub.vv   31..26=0x2b vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfmacc.vv    31..26=0x2c vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfnmacc.vv   31..26=0x2d vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfmsac.vv    31..26=0x2e vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+vfnmsac.vv   31..26=0x2f vm vs2 vs1 14..12=0x1 vd 6..2=0x15 1..0=3
+
+vfmadd.vf    31..26=0x28 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfnmadd.vf   31..26=0x29 vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfmsub.vf    31..26=0x2a vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfnmsub.vf   31..26=0x2b vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfmacc.vf    31..26=0x2c vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfnmacc.vf   31..26=0x2d vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfmsac.vf    31..26=0x2e vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
+vfnmsac.vf   31..26=0x2f vm vs2 rs1 14..12=0x5 vd 6..2=0x15 1..0=3
