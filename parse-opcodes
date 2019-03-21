@@ -36,19 +36,15 @@ arglut['shamt'] = (25,20)
 arglut['shamtw'] = (24,20)
 
 # for vectors
-arglut['nf'] = (31,29)
-arglut['func6'] = (31,26)
-arglut['imm11'] = (30,20)
-arglut['mop'] = (28,26)
-arglut['vm'] = (25,25)
-arglut['vs2'] = (24,20)
-arglut['lumop'] = (24,20)
-arglut['sumop'] = (24,20)
-arglut['vs1'] = (19,15)
-arglut['simm5'] = (19,15)
-arglut['width'] = (14,12)
 arglut['vd'] = (11,7)
 arglut['vs3'] = (11,7)
+arglut['vs1'] = (19,15)
+arglut['vs2'] = (24,20)
+arglut['vm'] = (25,25)
+arglut['amoop'] = (31,27)
+arglut['nf'] = (31,29)
+arglut['simm5'] = (19,15)
+arglut['zimm11'] = (30,20)
 
 
 causes = [
